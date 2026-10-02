@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+        .test{
+            color: blue;
+        }
+        #id{
+            color: green;
+        }
+        h1,
+        span{
+                color: orange;
+        }
+        div span{
+            color: pink;
+        }
+        div > span{
+            color: brown;
+        }
+        span + p{
+            color: purple;
+        }
+        span ~ em{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>기본 선택자</h1>
+    <p>타입 선택자를 선택해보십다</p>
+    <p class="test">클래스 선택자를 선택해보십다</p>
+    <p id="test">아이디 선택자를 선택해보십다</p>
+    <span>span 선택자를 선택해보십다</span>
+
+    <h1>결합자</h1>
+    <div> 
+        <p>
+            <span>자손 결합자</span>
+        </p>
+        <span>자식 결합자</span>
+        <p>인접형제 결합자</p>
+        <em>일반형제 결합자</em>
+    </div>
+</body>
+</html>
