@@ -30,14 +30,27 @@
         span ~ em{
             color: gray;
         }
+        .mouse:hover{
+            color: yellow;
+        }  
+        input{
+            outline: none;
+            border: 1px solid red;
+        }
+        .after::after{
+            display: inline-block;
+            color: blueviolet;
+            content: "after 요소";
+        }
     </style>
 </head>
-<body>
+<>
     <h1>기본 선택자</h1>
     <p>타입 선택자를 선택해보십다</p>
     <p class="test">클래스 선택자를 선택해보십다</p>
     <p id="test">아이디 선택자를 선택해보십다</p>
     <span>span 선택자를 선택해보십다</span>
+    <hr>
 
     <h1>결합자</h1>
     <div> 
@@ -48,5 +61,10 @@
         <p>인접형제 결합자</p>
         <em>일반형제 결합자</em>
     </div>
+    <hr>
+    <h1>의사 클래스와 의사 요소</h1>
+    <p class = "mouse">마우스를 올려보세요 </p>
+    <input type="text" />
+    <p class = "after">after로 요소를 만듭니다</p>
 </body>
 </html>
