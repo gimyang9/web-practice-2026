@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+        }
+        .area.bg-red {
+            background-color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <button class="btn_add">클릭: 배경색 빨강</button>
+    <button class="btn_remove">클릭: 원래대로</button>
+    <button class="btn_toggle">클릭: 토글</button>
+    <div class="area">여기 배경색이 변경됩니다</div>
+
+    <script>
+        const btn_add = document.querySelector('.btn_add');
+        const btn_remove = document.querySelector('.btn_remove');
+        const btn_toggle = document.querySelector('.btn_toggle');
+        const area = document.querySelector('.area');
+
+        btn_add.addEventListener('click', function() {
+            area.classList.add('bg-red');
+        });
+
+        btn_remove.addEventListener('click', function() {
+            area.classList.remove('bg-red');
+        });
+
+        btn_toggle.addEventListener('click', function() {
+            area.classList.toggle('bg-red');
+        });
+
+        console.log(area.classList.contains('area'));
+    </script>
+    
+</body>
+</html>
